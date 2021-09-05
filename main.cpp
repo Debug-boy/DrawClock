@@ -204,7 +204,7 @@ private:
 
 public:
 
-	void setBlackImg(LPCSTR img_dir) {
+	void setBackGroundImg(LPCSTR img_dir) {
 		loadimage(&this->img_blackGround, img_dir);
 	}
 
@@ -228,7 +228,7 @@ int main(int argc,char *argv[]) {
 	Mclock mClock(FRAMER_CENTER_X, FRAMER_CENTER_Y, 300);
 	initgraph(FRAMER_WIDTH, FRAMER_HEIGHT);
 
-	mClock.setBlackImg("black_sky.jpg");
+	mClock.setBackGroundImg("black_sky.jpg");
 	mClock.render();
 
 
